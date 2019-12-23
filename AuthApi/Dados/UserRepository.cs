@@ -17,7 +17,7 @@ namespace AuthApi.Dados
         public UserRepository(IConfiguration configuration)
         {
             Configuration = configuration;
-            Conn = Configuration.GetConnectionString("CONN_BAIXAKI");
+            Conn = Configuration.GetConnectionString("CONNNECTION");
         }
 
         public async Task<User> AuthenticateAsync(string email, string password)
